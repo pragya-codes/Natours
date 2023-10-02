@@ -114,6 +114,21 @@ body {
 	text-decoration: none;
 	transition: transform 0.2s, box-shadow 0.2s;
 	position: relative;
+	animation-name: moveInTop;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+}
+
+@keyframes moveInTop {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .btn:hover {
